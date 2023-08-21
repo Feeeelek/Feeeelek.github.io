@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sample text</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b>giard</b>design</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Oferta
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Projekty</a></li>
+                            <li><a class="dropdown-item" href="#">Wizualizacje</a></li>
+                            <li><a class="dropdown-item" href="#">Realizacje</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">O firmie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Realizacje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Kontakt</a>
+                    </li>
+                    <li>
+                        <div id="searchBar" style="display:none">
+                            <form class="d-flex" role="search" aria-hidden="true" style="display:none">
+                                <input class="form-control me-2" type="search" placeholder="Szukaj" aria-label="Search">
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+
+                        <button class="nav-link active" style="border:thick" aria-current="page" id="searchButtton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!--landing-->
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-5 col-md-5  " style="background-color: #dcc1ab">
+                <div style="padding:100px">
+                    <div class="d-flex justify-content-center d-flex align-items-center" style="padding: 40px; padding-right: 100px "><h1>Nowoczesna aranżacja Twojego ogrodu</h1></div>
+                    <div class="d-flex justify-content-center" style="padding:40px;padding-top:0px">
+                        <a>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług                 z indywidualnym podejściem do każdego projektu.</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap" style="padding:60px">
+                        <button class="mb-2" style="width:200px;height:40px;border-radius:25px;background-color:green;color:white;border-width:0px">Skontaktuj się z nami</button>
+                        <button style="width: 200px; height: 40px; border-radius: 25px; background-color: green; background-color: #dcc1ab; color: green; border-width: 2px; border-block-color: green ">
+                            Zobacz nasze realizacje<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-7 " style=" background-color: floralwhite;padding:0px  ">
+                <div id="carouselExampleControls" class="carousel slide align-items-center object-fit-fill" data-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img-fluid" style="width:700px;height:700px" src="https://picsum.photos/id/300/700/700" />
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" style="width:700px;height:700px" src="https://picsum.photos/id/301/700/700" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-fluid" style="width:700px;height:700px" src="https://picsum.photos/id/302/700/700" />
+
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="row align-items-end">
+                            <div class="col-sm-1">
+                                <a style="bottom: -640px; background-color: ghostwhite; margin: 640px 0px " class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <h1 style="color: black; padding-left:20px"><</h1>
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="col-sm-1">
+                                <a style=" bottom: -640px; background-color: ghostwhite; margin: 640px 0px" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <h1 style="color: black; padding-left: 20px">></h1>
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                        </div>
+
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #f5f0ec">
+        <style>
+            body {
+                background-color: #eee;
+            }
+
+            .card {
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+
+            }
+
+                .card:hover {
+                    background-color: darkgreen;
+                    color:white;
+                }
+
+                .card span {
+                    font-size: 14px;
+                }
+        </style>
+        <!--Cards-->
+        <div style="margin-bottom:15px;  margin-left: 300px; margin-right: 300px;padding-top:100px">
+            <div class="justify-content-center"><a><small>Oferta</small></a></div>
+            <div style="margin-bottom:30px"><h2>Działamy <i> kompleksowo</i></h2></div>
+            <div style="margin-bottom:80px" class="justify-content-center"><a>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </a></div>
+        </div>
+        <div class="d-flex justify-content-around flex-wrap">
+            <div class="card " style="width: 18rem; margin-bottom: 100px; border-width: 0px; border-radius: 25px">
+                <a style="padding-left:20px;padding-top:15px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                    </svg>
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title"><b>Projekty</b></h4>
+                    <p class="card-text" style="padding:0px 10px">
+
+                        Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
+                    </p>
+                    <a href="#" style="color:green">
+                        Dowiedz się więcej <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="card hoverable" style="width: 18rem; margin-bottom: 100px; border-width: 0px; border-radius: 25px">
+                <a style="padding-left:20px;padding-top:15px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                    </svg>
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title"><b>Wizualizacje</b></h4>
+                    <p class="card-text" style="padding:0px 10px">
+
+                        Przedstawimy Ci projekty koncepcyjne  w postaci wirtualnego spaceru animowanego w technologii 3D.
+                    </p>
+                    <a href="#" style="color:green">
+                        Dowiedz się więcej <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="card hoverable" style="width: 18rem; margin-bottom: 100px;border-width:0px;border-radius:25px">
+                <a style="padding-left:20px;padding-top:15px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                    </svg>
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title"><b>Realizacje</b></h4>
+                    <p class="card-text" style="padding:0px 10px">
+                        Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
+                    </p>
+                    <a href="#" style="color:green">
+                        Zobacz nasze realizacje <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--o firmie -->
+    <div class="container-fluid ">
+        <div class="row ">
+
+
+            <div class="col-sm-3  " style="background-color: #1b5b31 ;color: whitesmoke ">
+                <div>
+                    <img class="img-fluid" src="Photo.png" style="max-width:fit-content;margin-left:-15px" />
+                </div>
+            </div>
+
+            <div class="col-sm-9  " style="background-color: #1b5b31;color:whitesmoke ">
+                <div style="padding:100px">
+                    <div class="d-flex my-1 " style="padding: 20px; padding-right: 150px;padding-left:80px "><a><small>O firmie</small></a></div>
+                    <div class="d-flex my-2 " style="padding: 20px; padding-right: 150px;padding-left:80px "><h1>Tworzymy z <i>Pasją</i></h1></div>
+                    <div class="d-flex my-1 " style=" padding-right: 150px; padding-left: 80px">
+                        <a>
+                            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap" style="padding:60px">
+
+                        <button type="button" class="btn btn-outline-primary" style="border-block-color:floralwhite;color:floralwhite;border-radius:25px">
+                            Poznaj nas bliżej
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Gallery -->
+
+    <div class="row" style="background-color: #dcc1ab">
+        <div class="text" style="padding:200px">
+            <div class="my-2" style="color:green"><a><i>Realizacje</i></a></div>
+            <div class="" style="background-color: #dcc1ab"><h1>Nasze <i>projekty</i></h1></div>
+        </div>
+        <style>
+            .grid {
+                margin: auto;
+            }
+
+            .grid-item {
+                margin-bottom: 20px;
+            }
+
+            #GalleryModal .modal-img {
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+            }
+        </style>
+        <div class="grid"  }'>
+            <div class="grid-item "><img class="gallery-item" src="https://picsum.photos/id/37/300/600" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/17/300/400" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/257/300/500" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/7/300/600" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/137/300/300" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/7/300/500" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/27/300/600" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/247/300/600" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/227/300/400" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/117/300/300" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/235/300/400" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/239/300/600" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/230/300/300" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/232/300/400" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/2/300/500" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/12/300/400" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/20/300/300" /></div>
+            <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/90/300/500" /></div>
+
+            <!--hidden -->
+            <div class="hidden-gallery" style="display:none" id="hidGal">
+                <div class="grid-item "><img class="gallery-item" src="https://picsum.photos/id/37/300/600" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/17/300/400" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/257/300/500" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/7/300/600" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/137/300/300" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/7/300/500" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/27/300/600" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/247/300/600" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/227/300/400" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/117/300/300" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/235/300/400" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/239/300/600" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/230/300/300" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/232/300/400" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/2/300/500" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/12/300/400" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/20/300/300" /></div>
+                <div class="grid-item"><img class="gallery-item" src="https://picsum.photos/id/90/300/500" /></div>
+            </div>
+
+
+        </div>
+        <div style="margin-bottom:20px"></div>
+        </div>
+        <!-- Modal -->
+        <script>
+            document.addEventListener("click", function (e) {
+                if (e.target.classList.contains("gallery-item")) {
+                    const src = e.target.getAttribute("src");
+                    document.querySelector(".modal-img").src = src;
+                    const myModal = new bootstrap.Modal(document.getElementById('GalleryModal'));
+                    myModal.show();
+                }
+            })
+        </script>
+        <div class="d-flex justify-content-center "style="background-color: #dcc1ab ;padding-bottom:30px">
+            
+            <button type="button" class="btn btn-primary " id="togBut" data-toggle="modal" data-target="#exampleModal">
+                Więcej
+
+            </button>
+        </div>
+        <script>
+            //open more gallery
+            var elem = document.querySelector('.grid');
+            var msnry = new Masonry(elem, {
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 50,
+                gutter: 20,
+                fitWidth: true
+            });
+            msnry.layout()
+            
+            const toggleGalBut = document.getElementById('togBut').onclick = function () {
+                const openGallery = document.getElementById('hidGal');
+                if (openGallery.style.display == "none") {
+                    openGallery.style.display = "block";
+                    //const toggleGalB = document.getElementById('togBut').style.display = "none";
+
+                    msnry.layout();
+
+                }
+                else {
+                    openGallery.style.display = "none";
+                    msnry.layout();
+                }
+
+
+            };
+
+
+        </script>
+        <div class="modal fade" id="GalleryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-img" src="" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--footer -->
+        <div class="container-fluid my-5">
+            <div class=" row flex-wrap" style="color: floralwhite; background-color: #1b5b31;padding:150px;margin:0px 40px">
+                <div class=" col-lg-8">
+                    <h1>Zostańmy w kontakcie</h1>
+                    <h1><b><i>Znajdziesz nas na instagramie.</i></b></h1>
+                </div>
+                <div class=" col-sm-4 ">
+                    <p class="my-1 ">Śledź nasze</p>
+                    <p class="">najnowsze realizacje!</p>
+                    <button type="button" class="btn ms-3 " style="background-color: floralwhite; color: #1b5b31;border-radius:25px ">Instagram</button>
+                </div>
+            </div>
+        </div>
+        <div class=" container-fluid" style="padding:0px">
+            <div style="padding: 100px 150px;background-color:black;color:floralwhite">
+                <div class="row ">
+                    <div class="col-sm-3"><a><b>giard</b>design</a></div>
+                    <div class="d-flex justify-content-end col-sm-9 row">
+                        <div class="col-sm-3"><a>Daj znać co możemy dla ciebie zrobić!</a></div>
+                        <div class="btn col-sm-3 " style="background-color: #1b5b31;color:floralwhite;border-radius:25px"><p class="mt-1" style="margin:-15px">Skontaktuj się z nami<p></div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <hr style="width:100%; border-width:3px" class="featurette-divider ">
+                </div>
+                <div class="row mt-4 mb-4">
+                    <div class=" col" style="color:floralwhite">
+                        <a href="#" class="me-4 " style="color: floralwhite; text-decoration: none">Kontakt</a>
+                        <a href="#" class="me-4 " style="color: floralwhite; text-decoration: none">Instagram</a>
+                        <a href="#" class="me-4 " style="color: floralwhite; text-decoration: none">Facebook</a>
+                        <a href="#" class="me-4 " style="color:floralwhite;text-decoration:none">Linkedin</a>
+                    </div>
+                    <div class=" col d-flex justify-content-end" style="color:floralwhite">
+                        <p class="me-3">000-000-000</p>
+                        <p>giarddesign@kontakt.pl</p>
+                    </div>
+                </div>
+                <div class="my-4 row">
+                    <div class="col">
+                        <h5>Prawa zastrzeżone @ 2022</h5>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <h5 class="me-3">made by</h5>>
+                        <img src="123.png" style="width:150px;height:30px" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <!-- Search bar popup-->
+        <script>
+            const toastTrigger = document.getElementById('searchButtton').onclick = function () {
+                const toastLiveExample = document.getElementById('searchBar')
+                if (toastLiveExample.style.display == "none") {
+                    toastLiveExample.style.display = "block";
+                }
+                else {
+                    {
+                        toastLiveExample.style.display = "none";
+                    }
+
+                }
+            };
+
+
+        </script>
+</body>
+</html>
